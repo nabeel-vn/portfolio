@@ -1,0 +1,139 @@
+
+/* Styling for the entire contact section */
+#contactPage {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.ContactDesc {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-message {
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #007bff; /* Blue for feedback */
+}
+
+.feedback-message.loading {
+    color: orange;
+}
+
+/* Form Styles */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    background: #202020; /* Dark background for form */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.name, .email, .msg {
+    width: 100%;
+    max-width: 35rem;
+    background: #363636; /* Slightly lighter dark input background */
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.submitBtn {
+    background: white;
+    color: #333;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submitBtn:hover {
+    background: #f0f0f0;
+}
+
+.submitBtn:disabled {
+    cursor: not-allowed;
+    background: #777;
+    color: #ccc;
+}
+
+/* Social Links Styles */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* The .link class ensures all icons (img tags) have the exact same dimensions */
+.link {
+    object-fit: cover;
+    height: 3rem; /* Fixed Height */
+    width: 3rem;  /* Fixed Width */
+    margin: 0 0.75rem;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Style the anchor tag wrapper for consistency */
+.links a {
+    display: flex; /* Helps align the icon within the flex container */
+}
+
+/* Hover effect for clickable links */
+.links a:hover .link {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 480px) {
+    .contactForm {
+        padding: 1rem;
+        width: 95%;
+    }
+    .contactPageTitle {
+        font-size: 2.5rem;
+    }
+    .links {
+        margin-top: 1rem;
+    }
+    .link {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0 0.5rem;
+    }
+}
