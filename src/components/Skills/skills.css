@@ -1,0 +1,121 @@
+
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    /* 🚀 Gradient Fill: Blends white at the top to light blue at the bottom */
+    background: linear-gradient(to bottom, #f0f8ff, #add8e6); /* Light White to Light Blue */
+    /* Added blue shadow */
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.2); 
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+
+}
+
+.skillBarText>h2 {
+    /* Dark Blue Text for headings (highly visible) */
+    color: #004d80; 
+    margin-bottom: 0.5rem;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    /* Increased weight for better visibility on light background */
+    font-weight: 500;
+    /* Dark Gray Text for body copy */
+    color: #333333; 
+    
+    /* 🌟 Applied Text Justification */
+    text-align: justify; 
+
+}
+
+@media screen and (max-width: 720px) {
+    /* Adjust padding and font size for the main section title and description */
+    .skillTitle {
+        font-size: 2.5rem;
+    }
+    .skillDesc {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    /* Change skill bars to stack vertically on small screens */
+    .skillBar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem; /* Adjust padding */
+    }
+
+    /* Adjust image and text spacing for vertical layout */
+    .skillBarImg {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .skillBarText {
+        width: 100%;
+    }
+
+    .skillBarText>h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Important: Text should remain justified on mobile for readability */
+    .skillBarText>p {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustment for very small screens */
+    .skillTitle {
+        font-size: 2rem;
+    }
+    .skillBars {
+        max-width: 95%; /* Allow bars to take up more horizontal space */
+    }
+}
