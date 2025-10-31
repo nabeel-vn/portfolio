@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.76a4862a.css",
+    "main.js": "/portfolio/static/js/main.02fca472.js",
+    "static/media/tial1.png": "/portfolio/static/media/tial1.4b8c2121cc04d337f3df.png",
+    "static/media/image.png": "/portfolio/static/media/image.bf5a78681c1f9eac5331.png",
+    "static/media/project2.png": "/portfolio/static/media/project2.bf01685c084f79376309.png",
+    "static/media/portfolio-1.png": "/portfolio/static/media/portfolio-1.b33adf772d54ab33e953.png",
+    "static/media/linkedin-icon.png": "/portfolio/static/media/linkedin-icon.c18ad4b60f6ee7a5aebb.png",
+    "static/media/jyothi.png": "/portfolio/static/media/jyothi.6b9cfc7391fcf7ab238d.png",
+    "static/media/project_works.png": "/portfolio/static/media/project_works.f914ce17a18ab1e08279.png",
+    "static/media/ai.png": "/portfolio/static/media/ai.166931e83703c37851cf.png",
+    "static/media/entrepreneur.png": "/portfolio/static/media/entrepreneur.d0162a254b797b0e26f1.png",
+    "static/media/isn.png": "/portfolio/static/media/isn.07730f64ef2ec88d0c91.png",
+    "static/media/experience.png": "/portfolio/static/media/experience.734a894fa067ce748f6b.png",
+    "static/media/real_estate.png": "/portfolio/static/media/real_estate.7249bf8ec5ac5eecde90.png",
+    "static/media/instagram.png": "/portfolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
+    "index.html": "/portfolio/index.html",
+    "main.76a4862a.css.map": "/portfolio/static/css/main.76a4862a.css.map",
+    "main.02fca472.js.map": "/portfolio/static/js/main.02fca472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76a4862a.css",
+    "static/js/main.02fca472.js"
+  ]
+}
