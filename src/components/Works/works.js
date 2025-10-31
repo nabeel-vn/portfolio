@@ -76,9 +76,9 @@ const portfolioItems = [
                 id: '3a',
                 // 🛠️ FIX APPLIED: Set detailImg to null to remove the image for the Portfolio Website
                 detailImg: null, 
-                role: "Portfolio Website (React)",
+                role: "Portfolio Website",
                 duration: "Personal Project",
-                info: "Built a fully responsive personal website using modern React principles and CSS."
+                info: "Built a fully responsive personal website using Java, HTML and CSS."
             },
             {
                 id: '3b',
