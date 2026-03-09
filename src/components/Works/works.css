@@ -1,4 +1,5 @@
 
+/* --- External Container (The Section) --- */
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
@@ -6,328 +7,176 @@
     max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* This centers the Title and Desc */
     justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
+    color: white;
 }
 
 .worksTitle {
     margin: 1rem 0;
     font-size: 3rem;
+    text-align: center;
 }
 
 .worksDesc {
     font-weight: 300;
     font-size: 1rem;
     max-width: 45rem; 
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
+/* --- The Grid (The Container for the Bars) --- */
 .worksGrid { 
-    margin: 1.5rem;
     width: 100%;
     max-width: 50rem; 
-    text-align: left;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: stretch; /* Makes bars fill the full width */
 }
 
-/* ----------------------------------- */
-/* ## Base Work Bar & Theme Classes */
-/* ----------------------------------- */
-
+/* --- The Individual Bars (Education, Experience, Projects) --- */
 .workBar {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.8rem;
     width: 100%; 
-    /* Base text color for better contrast */
     color: #333; 
+    text-align: left; /* Ensures all text inside starts from the left */
 }
 
-/* 👑 Royal Purple Theme (For Education) */
-.royal-purple-theme {
-    /* Royal Purple/White Gradient */
-    background: linear-gradient(to bottom, #ffffff, #d8bfd8); /* White to Thistle */
-    box-shadow: 0 4px 12px rgba(78, 42, 132, 0.25); 
-}
-.royal-purple-theme .workBarText h2, 
-.royal-purple-theme .workDetailText > h3 {
-    color: #4b0082; /* Indigo (Dark Purple) */
-}
-.royal-purple-theme .detailRole, /* Role in Education */
-.royal-purple-theme .detailDuration, 
-.royal-purple-theme .imageClickText {
-    color: #7b68ee; /* Medium Royal Blue/Purple */
-    font-weight: 700;
-}
-.royal-purple-theme .workDetails {
-    border-top: 1px solid rgba(78, 42, 132, 0.15); 
-}
+/* --- Theme Gradients & Bold Headings --- */
+.royal-purple-theme { background: linear-gradient(to bottom, #ffffff, #e6d5f7); }
+.blue-theme { background: linear-gradient(to bottom, #ffffff, #e3f2fd); }
+.purple-theme { background: linear-gradient(to bottom, #ffffff, #f3e5f5); }
 
-/* 🟦 Blue Theme (For Experience) */
-.blue-theme {
-    background: linear-gradient(to bottom, #f0f8ff, #add8e6);
-    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.2); 
-}
-.blue-theme .workBarText h2, 
-.blue-theme .workDetailText > h3 {
-    color: #004d80; /* Dark Blue */
-}
-.blue-theme .detailDuration, 
-.blue-theme .imageClickText {
-    color: #0077b6; /* Medium Blue */
-}
-.blue-theme .workDetails {
-    border-top: 1px solid rgba(0, 77, 128, 0.1); 
-}
-.blue-theme .detailRole { /* Role in Experience - default color */
-    color: #2C2C2C; /* Charcoal Gray */
-    font-weight: 500;
-}
+/* Bold Titles inside the bars */
+.workBarText h2 { font-size: 1.8rem; margin-bottom: 0.5rem; font-weight: 700; }
+.workDetailText h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.3rem; }
 
+.royal-purple-theme h2, .royal-purple-theme h3 { color: #4b0082; }
+.blue-theme h2, .blue-theme h3 { color: #004d80; }
+.purple-theme h2, .purple-theme h3 { color: #5B2C6F; }
 
-/* 🟣 Projects Theme (NEW Palette) */
-.purple-theme {
-    /* Background: Very light lavender */
-    background: linear-gradient(to bottom, #FFFFFF, #F5F0FA); 
-    box-shadow: 0 4px 12px rgba(91, 44, 111, 0.2); /* Shadow based on Primary Purple */
-}
-.purple-theme .workBarText h2, 
-.purple-theme .workDetailText > h3 {
-    color: #5B2C6F; /* Primary Purple */
-}
-.purple-theme .detailDuration, 
-.purple-theme .imageClickText {
-    color: #5B2C6F; /* Primary Purple */
-}
-.purple-theme .workDetails {
-    border-top: 1px solid rgba(91, 44, 111, 0.15); /* Subtle Primary Purple border */
-}
-.purple-theme .detailRole { /* Role in Projects - custom color */
-    font-weight: 700; 
-    color: #5B2C6F; /* Primary Purple */
-}
-/* Adjust detailInfo color in purple theme for better contrast */
-.purple-theme .detailInfo {
-    color: #444444; /* Slightly darker gray for better readability */
-}
-
-/* 🌟 Gold Highlight for MLA Recognition in Projects */
-.highlight-gold {
-    color: #E6B400; /* Royal Gold */
-    font-weight: 700;
-    text-shadow: 0 0 1px rgba(230, 180, 0, 0.5); 
-}
-
-
-/* ----------------------------------- */
-/* ## Shared/Default Detail Styles */
-/* ----------------------------------- */
-
+/* --- Layout Inside the Bar --- */
 .workBarTextGroup {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem; 
+    justify-content: flex-start; /* Aligns icon and title to the left */
+    margin-bottom: 1rem; 
 }
 
-.workBarTextGroup .workBarImg {
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
-}
-
-.workBarText p {
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 0.5rem 0 0 0;
-    color: #333333; /* Improved contrast */ 
+.workBarImg {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1.5rem;
+    object-fit: contain;
 }
 
 .workDetails {
     margin-top: 1rem;
     padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
-}
-
-.workDetailItem {
-    display: block; 
-    padding: 0.5rem 0;
+    gap: 1.5rem;
 }
 
 .detailContentContainer {
     display: flex;
     gap: 1.5rem;
+    justify-content: space-between; /* Puts text on left, logo on right */
     align-items: flex-start;
 }
 
-.detailImageWrapper {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%; 
-    flex-shrink: 0;
-}
-
-/* Default style for clickable images (Experience/Projects) */
-.workDetailImg {
-    object-fit: cover; /* Default: crops to fill space */
-    width: 100%;
-    height: auto; 
-    max-height: 10rem; 
-    border-radius: 0.25rem;
-    cursor: pointer; 
-    transition: transform 0.2s;
-    margin-bottom: 0.25rem; 
-}
-
-.workDetailImg:hover {
-    transform: scale(1.02);
-}
-
-/* 🌟 NEW: Style for full-display images (Education) */
-.workDetailImg-full {
-    object-fit: contain; /* Ensures the entire image is visible, no cropping */
-    height: auto;       /* Let height be determined by aspect ratio */
-    max-height: 5rem;   /* Adjust max-height for logos/icons */
-    cursor: default;    /* No pointer cursor */
-    transition: none;   /* No hover animation needed */
-}
-
-/* Disable hover effect for full-display images */
-.workDetailImg-full:hover {
-    transform: none;
-}
-
-.imageClickText { /* Existing class for "Click to view full image" */
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 0.2rem;
-    text-align: center;
-}
-
 .workDetailText {
-    flex-grow: 1; 
-    flex-basis: 70%; 
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     text-align: left;
 }
 
-.detailGrade {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #666666;
-    margin: 0 0 0.25rem 0;
-}
+.detailRole { font-weight: 600; margin-bottom: 0.2rem; }
+.detailDuration { font-size: 0.85rem; color: #555; margin-bottom: 0.6rem; }
+.detailInfo { font-size: 0.95rem; text-align: justify; line-height: 1.5; }
 
-.detailInfo {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #333333; /* Improved contrast */ 
-    margin: 0;
-    text-align: justify; 
-}
-
-/* --- Button and Lightbox (Unchanged) --- */
-.workBtn {
-    margin: 3rem 0;
-    padding: 0.5rem 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    background: white;
-    font-size: 1rem;
+/* --- Images & Gallery --- */
+.workDetailImg {
+    width: 110px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
+.workDetailImg-full {
+    width: 70px;
+    cursor: default;
+}
+
+.clickHereText {
+    color: #0077b6;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.detailImageGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 350px;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* --- LIGHTBOX (THE POPUP) --- */
 .lightbox-modal {
     position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85); /* Black overlay */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .lightbox-content {
-    margin: auto;
-    display: block;
-    width: 90%;
-    max-width: 1000px;
+    max-width: 85%;
+    max-height: 85%;
     position: relative;
 }
 
 .lightbox-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 90vh;
+    max-width: 100%;
+    max-height: 85vh;
+    border: 4px solid white;
+    border-radius: 4px;
     object-fit: contain;
 }
 
 .lightbox-close {
     position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+    top: -45px;
+    right: 0;
+    color: white;
+    font-size: 3rem;
     cursor: pointer;
 }
 
-.lightbox-close:hover,
-.lightbox-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+.highlight-gold { color: #B8860B; font-weight: 700; }
 
-/* Media Queries */
 @media screen and (max-width: 600px) {
-    .detailContentContainer {
-        flex-direction: column;
-    }
-    .detailImageWrapper {
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .workDetailImg {
-        max-height: none;
-    }
-    .workDetailImg-full { /* Ensure full display on mobile too */
-        max-height: 8rem; 
-    }
-    .workDetailText {
-        width: 100%;
-        flex-basis: auto;
-    }
+    .detailContentContainer { flex-direction: column; }
+    .workDetailImg { width: 100%; max-width: 200px; }
+    .detailImageGallery { grid-template-columns: 1fr; }
 }
-
-@media screen and (max-width: 480px) {
-    .workBarTextGroup {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
-    .workBarTextGroup .workBarImg {
-        margin: 0 0 1rem 0;
-    }
-    .workBarText h2 {
-        font-size: 5vw;
-    }
-    .workBarText p {
-        font-size: 3vw;
-    }
-}
-

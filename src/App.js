@@ -1,19 +1,23 @@
-import Navbar from "./components/NavBar/navbar"; // Path: /navbar
-import Intro from "./components/Intro/intro";   // Path: /intro
-import Skills from "./components/Skills/skills"; // Path: /skills
-import Works from "./components/Works/works";   // Path: /works
-import Contact from "./components/Contact/contact"; // Path: /contact
-import Footer from "./components/Footer/footer"; // Path: /footer
+// Example of corrected imports in src/App.js
+import React from 'react';
+import './App.css'; 
+
+// All import statements must now match the disk file capitalization (e.g., 'Navbar.js', not 'navbar.js')
+import NavBar from './components/NavBar/Navbar.js';
+import Intro from './components/Intro/Intro.js';
+import Skills from './components/Skills/Skills.js';
+import Works from './components/Works/Works.js';
+import Contact from './components/Contact/Contact.js';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   return (
     <div className="App">
-      {/* The component names themselves (Navbar, Intro, etc.) must remain capitalized! */}
-      <Navbar/>
-      <Intro/>
-      <Skills/>
-      <Works/>
-      <Contact/>
+      <NavBar />
+      <Intro />
+      <Skills />
+      <Works />
+      <Contact />
       <Footer />
     </div>
   );

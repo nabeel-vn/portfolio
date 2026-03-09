@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": "ecomm-redesign",
+    "title": "E-commerce Platform Redesign",
+    "date": "2025-09-01",
+    "technologies": ["React", "Next.js", "Tailwind CSS"],
+    "summary": "A full redesign of a large-scale e-commerce site, focusing on performance and mobile responsiveness.",
+    "imageUrl": "/images/project-ecommerce.jpg", 
+    "repoUrl": "https://github.com/NabeelVN/ecomm-project"
+  },
+  {
+    "id": "ai-engine",
+    "title": "AI Recommendation Engine",
+    "date": "2025-05-15",
+    "technologies": ["Python", "TensorFlow", "Node.js"],
+    "summary": "Developed a machine learning model to provide personalized product recommendations to users.",
+    "imageUrl": "/images/project-ai.jpg",
+    "repoUrl": "https://github.com/NabeelVN/ai-engine"
+  },
+  {
+    "id": "personal-blog",
+    "title": "Personal Blog Platform",
+    "date": "2024-11-20",
+    "technologies": ["Gatsby", "Markdown", "Netlify"],
+    "summary": "A static blog built for speed and content management using Markdown files.",
+    "imageUrl": "/images/project-blog.jpg",
+    "repoUrl": "https://github.com/NabeelVN/personal-blog"
+  }
+]
