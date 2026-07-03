@@ -86,16 +86,16 @@ const portfolioItems = [
             {
                 id: '3a',
                 detailImg: null, 
-                Organization: "Portfolio Website", 
-                role: "Personal Project",
-                duration: "2024",
-                info: "Built a fully responsive personal website using React, HTML and CSS."
+                Organization: "A Real-Time Vehicle Detection and Novel Vehicle Tracking System for Estimating and Controlling Traffic Flow on Highways", 
+                role: "Academic Project",
+                duration: "Final Year Project",
+                info: "Developed an intelligent traffic monitoring and adaptive signal control system that uses YOLOv5-based computer vision to detect, classify, and count heterogeneous traffic — cars, buses, trucks, two-wheelers, and three-wheelers — from live video at urban intersections, with the model fine-tuned for Indian mixed-traffic conditions to achieve a Mean Absolute Percentage Error (MAPE) of just 4.09%. Using this data, I analyzed traffic flow, roadway capacity, delay, and Level of Service (LOS) based on Indo-HCM 2017 standards, then designed adaptive signal control algorithms combining Webster's method with Deep Reinforcement Learning (DRL)-inspired concepts to minimize congestion. The system was simulated and validated in SUMO (Simulation of Urban Mobility), achieving approximately a 42% reduction in network delay — demonstrating a practical, data-driven approach to smarter urban traffic management using Python, OpenCV, YOLOv5, and intelligent transportation system principles."
             },
             {
                 id: '3b',
                 detailImg: project2, 
                 Organization: "Real-Time Flow Monitoring for Canal Irrigation", 
-                role: "Academic Project",
+                role: "Mini Project",
                 duration: "Final Year Project",
                 info: `Guided by the vision of a sustainable and equitable rural India, this project presents an Arduino based real-time canal water flow monitoring system to ensure transparency, efficiency and fairness in irrigation water distribution. By empowering farmers with real-time data, it helps prevent water disputes, enables smarter crop planning, and fosters responsible water management. <br/><br/> Developed collaboratively by Nabeel Vellakutty Naushad, Sahana S, and Ann Mariya K.J. It was <span class="highlight-gold">recognized and appreciated by Honourable MLA Rahul Mamkootathil</span> for its potential to transform rural irrigation systems.`
             }
