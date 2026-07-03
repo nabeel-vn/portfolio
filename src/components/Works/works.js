@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './works.css';
 
@@ -89,7 +88,14 @@ const portfolioItems = [
                 Organization: "A Real-Time Vehicle Detection and Novel Vehicle Tracking System for Estimating and Controlling Traffic Flow on Highways", 
                 role: "Academic Project",
                 duration: "Final Year Project",
-                info: "Developed an intelligent traffic monitoring and adaptive signal control system that uses YOLOv5-based computer vision to detect, classify, and count heterogeneous traffic — cars, buses, trucks, two-wheelers, and three-wheelers — from live video at urban intersections, with the model fine-tuned for Indian mixed-traffic conditions to achieve a Mean Absolute Percentage Error (MAPE) of just 4.09%. Using this data, I analyzed traffic flow, roadway capacity, delay, and Level of Service (LOS) based on Indo-HCM 2017 standards, then designed adaptive signal control algorithms combining Webster's method with Deep Reinforcement Learning (DRL)-inspired concepts to minimize congestion. The system was simulated and validated in SUMO (Simulation of Urban Mobility), achieving approximately a 42% reduction in network delay — demonstrating a practical, data-driven approach to smarter urban traffic management using Python, OpenCV, YOLOv5, and intelligent transportation system principles."
+                info: `A real-time vehicle detection and tracking system for traffic monitoring and adaptive signal control on highways, built using YOLOv5-based computer vision.
+                <ul>
+                    <li>Detected, classified, and counted heterogeneous traffic — cars, buses, trucks, two-wheelers, and three-wheelers — from live video feeds at urban intersections.</li>
+                    <li>Fine-tuned for Indian mixed-traffic conditions, achieving <span class="highlight-gold">4.09% MAPE accuracy</span>.</li>
+                    <li>Analyzed traffic flow, capacity, delay, and Level of Service (LOS) using Indo-HCM 2017 standards.</li>
+                    <li>Designed adaptive signal control combining Webster's method with DRL-inspired concepts, reducing network delay by ~42% (validated in SUMO).</li>
+                    <li>Awarded <span class="highlight-gold">[AMOUNT] cash prize</span> at [EVENT NAME].</li>
+                </ul>`
             },
             {
                 id: '3b',
