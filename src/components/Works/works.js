@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './works.css';
+import React, { useState } from "react";
+import "./works.css";
 
-// Asset Imports
-import Portfolio1 from "../../assets/portfolio-1.png"; 
+// Assets
+import Portfolio1 from "../../assets/portfolio-1.png";
 import Jyothi from "../../assets/jyothi.png";
 import isn from "../../assets/isn.png";
 import Portfolio2 from "../../assets/experience.png";
 import Portfolio3 from "../../assets/project_works.png";
-import tial1 from "../../assets/tial1.png"; 
+import tial1 from "../../assets/tial1.png";
 import project2 from "../../assets/project2.png";
 import agec from "../../assets/agec.png";
 import agec1 from "../../assets/agec1.png";
@@ -15,180 +15,221 @@ import agec2 from "../../assets/agec2.png";
 import agec3 from "../../assets/agec3.png";
 
 const portfolioItems = [
-    {
-        id: 1,
-        img: Portfolio1, 
-        title: "Education",
-        description: "My academic background and qualifications.",
-        themeClass: "royal-purple-theme", 
-        details: [
-            {
-                id: '1a',
-                detailImg: Jyothi, 
-                Institution: "Jyothi Engineering College", 
-                role: "Bachelor of Technology",
-                duration: "2022 - 2026",
-                info: "Building a foundation in Civil Engineering by integrating technology and sustainability to shape the future.",
-                fullDisplay: true 
-            },
-            {
-                id: '1b',
-                detailImg: isn, 
-                Institution: "Indian School Nizwa", 
-                role: "High school",
-                grade: "1 - 10",
-                info: "Completed my high school at ISN in Nizwa, Oman.",
-                fullDisplay: true
-            }
-        ]
-    },
-    {
-        id: 2,
-        img: Portfolio2,
-        title: "Experience",
-        description: "A summary of my professional work history and roles.",
-        themeClass: "blue-theme", 
-        details: [
-            {
-                id: '2a',
-                detailImg: tial1,
-                Organization: "Thiruvananthapuram International Airport (Adani Airport Holdings Ltd)", 
-                role: "Internship",
-                duration: "24th June 2025 - 30th June 2025",
-                info: "A childhood dream that finally took flight: As a kid I was mesmerized by the airport scenes in 'Cars 2' - the buzzing airside, the motion and the magic beyond the runway. Years later, I got to live that dream during my internship at TIAL. Standing where planes takeoff, I realized - some childhood fantasies really do take flight."
-            },
-            {
-                id: '2b',
-                detailImg: null, 
-                Organization: "Builtech Constructions", 
-                role: "Summer Intern",
-                duration: "July 2024 - August 2024",
-                info: "The internship was at the Builtech Aura construction site. Had the opportunity to learn the basics of Civil Engineering aspects like large scale project execution, site supervision, Autocad basics and pile foundations."
-            },
-            {
-                id: '2c',
-                detailImgs: [agec, agec1, agec2, agec3], 
-                Organization: "Arabian Gulf Engineering Consultancy", 
-                role: "Engineering Intern",
-                duration: "16 February 2026 - 28 February 2026",
-                info: "Engineering extends beyond classrooms - it takes shape on construction sites, where theory is transformed into real structures. During my internship I gained hands-on exposure to RCC structural supervision, reinforcement inspection, bar bending schedule (BBS) verification, and various site execution practices. Learning directly on site under the guidance of my father reinforced that engineering is a responsibility built on precision and integrity."
-            }
-        ]
-    },
-    {
-        id: 3,
-        img: Portfolio3,
-        title: "Projects",
-        description: "A selection of key projects I have completed.",
-        themeClass: "purple-theme", 
-        details: [
-            {
-                id: '3a',
-                detailImg: null, 
-                Organization: "A Real-Time Vehicle Detection and Novel Vehicle Tracking System for Estimating and Controlling Traffic Flow on Highways", 
-                role: "Academic Project",
-                duration: "Final Year Project",
-                info: `A real-time vehicle detection and tracking system for traffic monitoring and adaptive signal control on highways, built using YOLOv5-based computer vision.
-                <ul>
-                    <li>Detected, classified, and counted heterogeneous traffic — cars, buses, trucks, two-wheelers, and three-wheelers — from live video feeds at urban intersections.</li>
-                    <li>Fine-tuned for Indian mixed-traffic conditions, achieving <span class="highlight-gold">4.09% MAPE accuracy</span>.</li>
-                    <li>Analyzed traffic flow, capacity, delay, and Level of Service (LOS) using Indo-HCM 2017 standards.</li>
-                    <li>Designed adaptive signal control combining Webster's method with DRL-inspired concepts, reducing network delay by ~42% (validated in SUMO).</li>
-                    <li>Awarded <span class="highlight-gold">[AMOUNT] cash prize</span> at [EVENT NAME].</li>
-                </ul>`
-            },
-            {
-                id: '3b',
-                detailImg: project2, 
-                Organization: "Real-Time Flow Monitoring for Canal Irrigation", 
-                role: "Mini Project",
-                duration: "Final Year Project",
-                info: `Guided by the vision of a sustainable and equitable rural India, this project presents an Arduino based real-time canal water flow monitoring system to ensure transparency, efficiency and fairness in irrigation water distribution. By empowering farmers with real-time data, it helps prevent water disputes, enables smarter crop planning, and fosters responsible water management. <br/><br/> Developed collaboratively by Nabeel Vellakutty Naushad, Sahana S, and Ann Mariya K.J. It was <span class="highlight-gold">recognized and appreciated by Honourable MLA Rahul Mamkootathil</span> for its potential to transform rural irrigation systems.`
-            }
-        ]
-    }
+  {
+    id: 1,
+    img: Portfolio1,
+    title: "Education",
+    description: "My academic background and qualifications.",
+    themeClass: "royal-purple-theme",
+    details: [
+      {
+        id: "1a",
+        detailImg: Jyothi,
+        Institution: "Jyothi Engineering College",
+        role: "Bachelor of Technology",
+        duration: "2022 - 2026",
+        info:
+          "Building a foundation in Civil Engineering by integrating technology and sustainability.",
+        fullDisplay: true,
+      },
+      {
+        id: "1b",
+        detailImg: isn,
+        Institution: "Indian School Nizwa",
+        role: "High school",
+        grade: "1 - 10",
+        info: "Completed high school at ISN, Oman.",
+        fullDisplay: true,
+      },
+    ],
+  },
+  {
+    id: 2,
+    img: Portfolio2,
+    title: "Experience",
+    description: "Professional work history and internships.",
+    themeClass: "blue-theme",
+    details: [
+      {
+        id: "2a",
+        detailImg: tial1,
+        Organization: "Thiruvananthapuram International Airport",
+        role: "Internship",
+        duration: "24th June 2025 - 30th June 2025",
+        info:
+          "A childhood dream internship at the airport that inspired my journey.",
+      },
+      {
+        id: "2b",
+        Organization: "Builtech Constructions",
+        role: "Summer Intern",
+        duration: "July 2024 - August 2024",
+        info:
+          "Learned AutoCAD, site supervision, and construction workflows.",
+      },
+      {
+        id: "2c",
+        detailImgs: [agec, agec1, agec2, agec3],
+        Organization: "Arabian Gulf Engineering Consultancy",
+        role: "Engineering Intern",
+        duration: "Feb 2026",
+        info:
+          "Hands-on RCC supervision, reinforcement inspection, and site execution.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    img: Portfolio3,
+    title: "Projects",
+    description: "Key academic and engineering projects.",
+    themeClass: "purple-theme",
+    details: [
+      {
+        id: "3a",
+        Organization:
+          "AI-Based Vehicle Detection and Traffic Flow Optimization System",
+        role: "Final Year Project",
+        duration: "Final Year",
+        info:
+          "Real-time YOLOv5-based traffic detection system for adaptive signal control.",
+      },
+      {
+        id: "3b",
+        detailImg: project2,
+        Organization: "Canal Irrigation Flow Monitoring System",
+        role: "Mini Project",
+        duration: "Final Year",
+        info:
+          "Arduino-based smart irrigation monitoring system improving water distribution.",
+      },
+    ],
+  },
 ];
 
 const Works = () => {
-    const [selectedImage, setSelectedImage] = useState(null); 
-    const [showGallery, setShowGallery] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [openGalleryId, setOpenGalleryId] = useState(null);
 
-    const openLightbox = (imgSrc) => setSelectedImage(imgSrc);
-    const closeLightbox = () => setSelectedImage(null);
+  return (
+    <section id="works">
+      <h2 className="worksTitle">My Portfolio</h2>
+      <span className="worksDesc">
+        I am excited to share my projects and experience.
+      </span>
 
-    return (
-        <section id='works'>
-            <h2 className='worksTitle'>My Portfolio</h2>
-            <span className='worksDesc'>I am excited to share the projects, works and achievements.</span>
-            
-            <div className='worksGrid'> 
-                {portfolioItems.map(item => (
-                    <div key={item.id} className={`workBar ${item.themeClass}`}>
-                        
-                        <div className='workBarTextGroup'> 
-                             <img src={item.img} alt={item.title} className='workBarImg' /> 
-                             <div className='workBarText'>
-                                 <h2>{item.title}</h2>
-                                 <p>{item.description}</p>
-                             </div>
-                        </div>
-
-                        <div className='workDetails'>
-                            {item.details.map(detail => (
-                                <div key={detail.id} className='workDetailItem'>
-                                    <div className='detailContentContainer'>
-                                        <div className='workDetailText'>
-                                            {(detail.Institution || detail.Organization) && <h3>{detail.Institution || detail.Organization}</h3>}
-                                            {detail.role && <p className='detailRole'>{detail.role}</p>}
-                                            {detail.duration && <p className='detailDuration'>{detail.duration}</p>}
-                                            {detail.info && <p className='detailInfo' dangerouslySetInnerHTML={{ __html: detail.info }}></p>}
-                                            
-                                            {/* Special Gallery for AGEC Internship */}
-                                            {detail.detailImgs && (
-                                                <div className="galleryContainer">
-                                                    <span className="clickHereText" onClick={() => setShowGallery(!showGallery)}>
-                                                        {showGallery ? "Click here to hide images" : "Click here to view the images"}
-                                                    </span>
-                                                    {showGallery && (
-                                                        <div className="detailImageGallery">
-                                                            {detail.detailImgs.map((img, idx) => (
-                                                                <img key={idx} src={img} alt="Work" className="galleryImg" onClick={() => openLightbox(img)} />
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            )}
-                                        </div>
-
-                                        {/* Standard Single Image (Logos) */}
-                                        {detail.detailImg && (
-                                            <div className='detailImageWrapper'>
-                                                <img 
-                                                    src={detail.detailImg} 
-                                                    alt={detail.role} 
-                                                    className={`workDetailImg ${detail.fullDisplay ? 'workDetailImg-full' : ''}`}
-                                                    onClick={!detail.fullDisplay ? () => openLightbox(detail.detailImg) : undefined} 
-                                                />
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+      <div className="worksGrid">
+        {portfolioItems.map((item) => (
+          <div key={item.id} className={`workBar ${item.themeClass}`}>
+            <div className="workBarTextGroup">
+              <img src={item.img} alt={item.title} className="workBarImg" />
+              <div className="workBarText">
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
             </div>
 
-            {selectedImage && (
-                <div className="lightbox-modal" onClick={closeLightbox}>
-                    <div className="lightbox-content" onClick={e => e.stopPropagation()}>
-                        <span className="lightbox-close" onClick={closeLightbox}>&times;</span>
-                        <img src={selectedImage} alt="Fullscreen View" className="lightbox-image" />
+            <div className="workDetails">
+              {item.details.map((detail) => (
+                <div key={detail.id} className="workDetailItem">
+                  <div className="detailContentContainer">
+                    <div className="workDetailText">
+                      {(detail.Institution || detail.Organization) && (
+                        <h3>
+                          {detail.Institution || detail.Organization}
+                        </h3>
+                      )}
+
+                      {detail.role && (
+                        <p className="detailRole">{detail.role}</p>
+                      )}
+
+                      {detail.duration && (
+                        <p className="detailDuration">{detail.duration}</p>
+                      )}
+
+                      {detail.info && (
+                        <p className="detailInfo">{detail.info}</p>
+                      )}
+
+                      {detail.detailImgs && (
+                        <div className="galleryContainer">
+                          <span
+                            className="clickHereText"
+                            onClick={() =>
+                              setOpenGalleryId(
+                                openGalleryId === detail.id ? null : detail.id
+                              )
+                            }
+                          >
+                            {openGalleryId === detail.id
+                              ? "Hide images"
+                              : "View images"}
+                          </span>
+
+                          {openGalleryId === detail.id && (
+                            <div className="detailImageGallery">
+                              {detail.detailImgs.map((img, idx) => (
+                                <img
+                                  key={idx}
+                                  src={img}
+                                  alt="gallery"
+                                  className="galleryImg"
+                                  onClick={() => setSelectedImage(img)}
+                                />
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
+
+                    {detail.detailImg && (
+                      <div className="detailImageWrapper">
+                        <img
+                          src={detail.detailImg}
+                          alt="detail"
+                          className={`workDetailImg ${
+                            detail.fullDisplay ? "workDetailImg-full" : ""
+                          }`}
+                          onClick={
+                            !detail.fullDisplay
+                              ? () => setSelectedImage(detail.detailImg)
+                              : undefined
+                          }
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
-            )}
-        </section>
-    );
-}
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {selectedImage && (
+        <div className="lightbox-modal" onClick={() => setSelectedImage(null)}>
+          <div
+            className="lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span
+              className="lightbox-close"
+              onClick={() => setSelectedImage(null)}
+            >
+              &times;
+            </span>
+            <img
+              src={selectedImage}
+              alt="fullscreen"
+              className="lightbox-image"
+            />
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
 
 export default Works;
