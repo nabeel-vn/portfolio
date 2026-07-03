@@ -1,13 +1,12 @@
-/* --- External Container (The Section) --- */
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
-    width: 100vw;
+    width: 100%;
     max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* This centers the Title and Desc */
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     padding: 2rem 1rem;
     color: white;
 }
@@ -21,57 +20,47 @@
 .worksDesc {
     font-weight: 300;
     font-size: 1rem;
-    max-width: 45rem; 
+    max-width: 45rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-/* --- The Grid (The Container for the Bars) --- */
-.worksGrid { 
+.worksGrid {
     width: 100%;
-    max-width: 50rem; 
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Makes bars fill the full width */
 }
 
-/* --- The Individual Bars (Education, Experience, Projects) --- */
 .workBar {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 0.8rem;
-    width: 100%; 
-    color: #333; 
-    text-align: left; /* Ensures all text inside starts from the left */
+    width: 100%;
+    color: #333;
+    transition: transform 0.2s ease;
 }
 
-/* --- Theme Gradients & Bold Headings --- */
-.royal-purple-theme { background: linear-gradient(to bottom, #ffffff, #e6d5f7); }
-.blue-theme { background: linear-gradient(to bottom, #ffffff, #e3f2fd); }
-.purple-theme { background: linear-gradient(to bottom, #ffffff, #f3e5f5); }
+.workBar:hover {
+    transform: translateY(-3px);
+}
 
-/* Bold Titles inside the bars */
-.workBarText h2 { font-size: 1.8rem; margin-bottom: 0.5rem; font-weight: 700; }
-.workDetailText h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.3rem; }
+.royal-purple-theme { background: linear-gradient(to bottom, #fff, #e6d5f7); }
+.blue-theme { background: linear-gradient(to bottom, #fff, #e3f2fd); }
+.purple-theme { background: linear-gradient(to bottom, #fff, #f3e5f5); }
 
-.royal-purple-theme h2, .royal-purple-theme h3 { color: #4b0082; }
-.blue-theme h2, .blue-theme h3 { color: #004d80; }
-.purple-theme h2, .purple-theme h3 { color: #5B2C6F; }
-
-/* --- Layout Inside the Bar --- */
 .workBarTextGroup {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Aligns icon and title to the left */
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .workBarImg {
     height: 3.5rem;
     width: 3.5rem;
-    margin-right: 1.5rem;
     object-fit: contain;
 }
 
@@ -86,36 +75,15 @@
 
 .detailContentContainer {
     display: flex;
-    gap: 1.5rem;
-    justify-content: space-between; /* Puts text on left, logo on right */
+    gap: 2rem;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .workDetailText {
     flex: 1;
-    text-align: left;
 }
 
-.detailRole { font-weight: 600; margin-bottom: 0.2rem; }
-.detailDuration { font-size: 0.85rem; color: #555; margin-bottom: 0.6rem; }
-.detailInfo { font-size: 0.95rem; text-align: justify; line-height: 1.5; }
-
-.detailInfo ul {
-    margin: 0.6rem 0 0 0;
-    padding-left: 1.2rem;
-    list-style-type: disc;
-}
-
-.detailInfo li {
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-
-.detailInfo li:last-child {
-    margin-bottom: 0;
-}
-
-/* --- Images & Gallery --- */
 .workDetailImg {
     width: 110px;
     border-radius: 4px;
@@ -132,8 +100,8 @@
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
-    margin-top: 10px;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .detailImageGallery {
@@ -152,12 +120,10 @@
     cursor: pointer;
 }
 
-/* --- LIGHTBOX (THE POPUP) --- */
 .lightbox-modal {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.85); /* Black overlay */
+    inset: 0;
+    background: rgba(0,0,0,0.85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,17 +146,28 @@
 
 .lightbox-close {
     position: absolute;
-    top: -45px;
-    right: 0;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
     color: white;
-    font-size: 3rem;
     cursor: pointer;
 }
 
-.highlight-gold { color: #B8860B; font-weight: 700; }
+.highlight-gold {
+    color: #B8860B;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 600px) {
-    .detailContentContainer { flex-direction: column; }
-    .workDetailImg { width: 100%; max-width: 200px; }
-    .detailImageGallery { grid-template-columns: 1fr; }
+    .detailContentContainer {
+        flex-direction: column;
+    }
+
+    .workDetailImg {
+        width: 80px;
+    }
+
+    .detailImageGallery {
+        grid-template-columns: 1fr;
+    }
 }
