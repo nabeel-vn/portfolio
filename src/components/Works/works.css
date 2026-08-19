@@ -1,3 +1,4 @@
+
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
@@ -73,6 +74,23 @@
     gap: 1.5rem;
 }
 
+/* --- Clear separation between each entry (education, experience, project) --- */
+.workDetailItem {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.workDetailItem:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Tint the divider to match each section's theme */
+.royal-purple-theme .workDetailItem { border-bottom-color: rgba(111, 66, 193, 0.18); }
+.blue-theme .workDetailItem { border-bottom-color: rgba(25, 118, 210, 0.18); }
+.purple-theme .workDetailItem { border-bottom-color: rgba(156, 39, 176, 0.18); }
+/* --- End separation styles --- */
+
 .detailContentContainer {
     display: flex;
     gap: 2rem;
@@ -109,6 +127,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: 15px;
+    margin-bottom: 0.5rem;
     max-width: 350px;
 }
 
