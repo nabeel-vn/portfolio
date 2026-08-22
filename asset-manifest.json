@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e49a7955.css",
-    "main.js": "/static/js/main.53d18790.js",
+    "main.js": "/static/js/main.683467ff.js",
     "static/media/detonator8.png": "/static/media/detonator8.4a3fa5566286921686fd.png",
     "static/media/detonator6.png": "/static/media/detonator6.80bf2de2c104de750249.png",
     "static/media/detonator4.png": "/static/media/detonator4.4673f09dc593fce9b834.png",
@@ -29,10 +29,10 @@
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
     "main.e49a7955.css.map": "/static/css/main.e49a7955.css.map",
-    "main.53d18790.js.map": "/static/js/main.53d18790.js.map"
+    "main.683467ff.js.map": "/static/js/main.683467ff.js.map"
   },
   "entrypoints": [
     "static/css/main.e49a7955.css",
-    "static/js/main.53d18790.js"
+    "static/js/main.683467ff.js"
   ]
 }
