@@ -1,13 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.e49a7955.css",
-    "main.js": "/static/js/main.23d29a39.js",
+    "main.js": "/static/js/main.53d18790.js",
+    "static/media/detonator8.png": "/static/media/detonator8.4a3fa5566286921686fd.png",
+    "static/media/detonator6.png": "/static/media/detonator6.80bf2de2c104de750249.png",
+    "static/media/detonator4.png": "/static/media/detonator4.4673f09dc593fce9b834.png",
+    "static/media/detonator5.png": "/static/media/detonator5.95499e4e24747065e757.png",
     "static/media/agec3.png": "/static/media/agec3.9229fcf80a6faa3b404c.png",
+    "static/media/detonator3.png": "/static/media/detonator3.049c6fdf367a03be4628.png",
     "static/media/agec2.png": "/static/media/agec2.c8e24b492c559f174b0b.png",
     "static/media/tial1.png": "/static/media/tial1.4b8c2121cc04d337f3df.png",
     "static/media/agec1.png": "/static/media/agec1.6398242a78a5ced9bb9b.png",
     "static/media/image.png": "/static/media/image.bf5a78681c1f9eac5331.png",
     "static/media/agec.png": "/static/media/agec.ec869bd5e5fea7c5a05e.png",
+    "static/media/detonator2.png": "/static/media/detonator2.4dafbf501d0e1089abaa.png",
+    "static/media/detonator7.png": "/static/media/detonator7.fd116dcbfb67caffa41e.png",
+    "static/media/detonator1.png": "/static/media/detonator1.949ac16d6f410dc7bf13.png",
     "static/media/project2.png": "/static/media/project2.bf01685c084f79376309.png",
     "static/media/portfolio-1.png": "/static/media/portfolio-1.b33adf772d54ab33e953.png",
     "static/media/linkedin-icon.png": "/static/media/linkedin-icon.c18ad4b60f6ee7a5aebb.png",
@@ -21,10 +29,10 @@
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
     "main.e49a7955.css.map": "/static/css/main.e49a7955.css.map",
-    "main.23d29a39.js.map": "/static/js/main.23d29a39.js.map"
+    "main.53d18790.js.map": "/static/js/main.53d18790.js.map"
   },
   "entrypoints": [
     "static/css/main.e49a7955.css",
-    "static/js/main.23d29a39.js"
+    "static/js/main.53d18790.js"
   ]
 }
