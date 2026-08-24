@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgb(120,180,255)"/>
+      <stop offset="55%" stop-color="rgb(200,225,255)"/>
+      <stop offset="100%" stop-color="rgb(255,255,255)"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M22 82 L22 18 L34 18 L68 62 L68 18 L80 18 L80 82 L68 82 L34 38 L34 82 Z"
+    fill="url(#logoGradient)"
+  />
+</svg>
