@@ -21,6 +21,9 @@ import detonator5 from "../../assets/detonator5.png";
 import detonator6 from "../../assets/detonator6.png";
 import detonator7 from "../../assets/detonator7.png";
 import detonator8 from "../../assets/detonator8.png";
+//import fins1 from "../../assets/fins1.png";
+//import fins2 from "../../assets/fins2.png";
+//import fins3 from "../../assets/fins3.png";
 
 
 const portfolioItems = [
@@ -89,14 +92,20 @@ const portfolioItems = [
         id: '2d',
         Organization: "Detonator Engineering Company LLC",
         location: "Muscat Governorate, Sultanate of Oman",
-        role: "Engineering Intern",
+        role: "Marine Engineering Intern",
         duration: "01-08-2026 - Present",
         phases: [
           {
             id: '2d-1',
-            phaseLabel: "Phase 1 - Haramil Project",
+            phaseLabel: "Phase 1 - Haramil Breakwater Project",
             detailImgs: [detonator1, detonator2, detonator3, detonator4, detonator5, detonator6, detonator7, detonator8],
-            info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Gained practical exposure to marine and coastal infrastructure construction, observing the execution of shoreline protection and marine structures from site preparation through placement and construction. The experience involved understanding construction methodologies, drawings, site levels and profiles, as well as quality-control and consultant inspection processes in a marine environment.</p><p><strong>Key Exposure</strong></p><ul><li>Understanding construction sequences and site preparation</li><li>Interpretation of marine construction drawings, levels, chainages and profiles</li><li>Boat ramp construction and associated marine works</li><li>Crown wall construction and coastal structural works</li><li>Core-Loc\u00ae placement and installation procedures</li><li>Rock and armour protection works</li><li>Monitoring execution against approved drawings and specifications</li><li>Quality-control practices in marine construction</li><li>Consultant inspections and implementation of site observations</li><li>HSE practices and coordination within an active construction site</li></ul><p><em>Focus: <span class=\"highlight-gold\">Marine Construction</span>, <span class=\"highlight-gold\">Coastal Infrastructure</span>, <span class=\"highlight-gold\">Shore Protection</span>, <span class=\"highlight-gold\">Crown Walls</span>, <span class=\"highlight-gold\">Core-Loc\u00ae Placement</span>, <span class=\"highlight-gold\">Rock and Armour Works</span>, <span class=\"highlight-gold\">Site Supervision</span></em></p>"
+            info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Gained practical exposure to marine and coastal infrastructure construction, observing the execution of shoreline protection and marine structures from site preparation through placement and construction. The experience involved understanding construction methodologies, drawings, site levels and profiles, as well as quality-control and consultant inspection processes in a marine environment.</p><p><strong>Key Exposure</strong></p><ul><li>Understanding construction sequences and site preparation</li><li>Interpretation of marine construction drawings, levels, chainages and profiles</li><li>Boat ramp construction and associated marine works</li><li>Crown wall construction and coastal structural works</li><li>Core-Loc® placement and installation procedures</li><li>Rock and armour protection works</li><li>Monitoring execution against approved drawings and specifications</li><li>Quality-control practices in marine construction</li><li>Consultant inspections and implementation of site observations</li><li>HSE practices and coordination within an active construction site</li></ul><p><em>Focus: <span class=\"highlight-gold\">Marine Construction</span>, <span class=\"highlight-gold\">Coastal Infrastructure</span>, <span class=\"highlight-gold\">Shore Protection</span>, <span class=\"highlight-gold\">Crown Walls</span>, <span class=\"highlight-gold\">Core-Loc® Placement</span>, <span class=\"highlight-gold\">Rock and Armour Works</span>, <span class=\"highlight-gold\">Site Supervision</span></em></p>"
+          },
+          {
+            id: '2d-2',
+            phaseLabel: "Phase 2 - Fins Coastal Protection Project",
+            //detailImgs: [fins1, fins2, fins3],
+            info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Unlike the Haramil Project, which was nearing its final stages, the Fins Main Breakwater (MBW) and the Lee Breakwater (LBW) was encountered at an early stage of construction — offering a valuable contrast in perspective, from the foundational setup of a marine project through to its initial execution on site. Gained hands-on exposure to Core-Loc® casting and curing at the casting yard, studied the concrete mix design in detail, and reviewed the project specifications and the contractor's scope of work. Also observed rock armour gradation, stockpile management, and the placement of rock armour at different levels and chainages along the breakwater.</p><p><strong>Key Exposure</strong></p><ul><li>Witnessed Core-Loc® casting and curing processes at the casting yard</li><li>Analyzed concrete mix design in detail</li><li>Reviewed project specifications and the contractor's scope of work</li><li>Understood rock armour gradation requirements</li><li>Observed stockpile management and material handling</li><li>Rock armour placement across different levels and chainages</li><li>Exposure to site equipment used in marine construction</li><li>Interpretation of breakwater engineering drawings and layouts</li><li>Consultant inspections and site observation follow-up</li></ul><p><em>Focus: <span class=\"highlight-gold\">Early-Stage Marine Construction</span>, <span class=\"highlight-gold\">Core-Loc® Casting</span>, <span class=\"highlight-gold\">Concrete Mix Design</span>, <span class=\"highlight-gold\">Rock Armour Gradation</span>, <span class=\"highlight-gold\">Casting Yard Operations</span>, <span class=\"highlight-gold\">Breakwater Construction</span></em></p>"
           }
         ]
       }

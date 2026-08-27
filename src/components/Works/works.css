@@ -126,6 +126,73 @@
     flex: 1;
 }
 
+.detailLocation {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin: 0.2rem 0;
+}
+
+/* --- Partition between phases (e.g. Phase 1 / Phase 2) within a single entry --- */
+.phaseBlock {
+    position: relative;
+    background: #f7f7f9;
+    border-radius: 10px;
+    padding: 1.3rem 1.4rem 1.2rem 1.4rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.phaseBlock:first-of-type {
+    margin-top: 1rem;
+}
+
+.phaseBlock:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.phaseLabel {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.8rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+}
+
+/* Themed accent — tinted phase background + top border + label pill, matching each section */
+.royal-purple-theme .phaseBlock {
+    background: linear-gradient(135deg, #f6effa, #ede0f5);
+    border-top-color: #8e44ad;
+    box-shadow: 0 3px 10px rgba(142, 68, 173, 0.1);
+}
+.royal-purple-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(142, 68, 173, 0.2); }
+.royal-purple-theme .phaseLabel { background: linear-gradient(135deg, #8e44ad, #b06fc7); }
+
+.blue-theme .phaseBlock {
+    background: linear-gradient(135deg, #eef7fd, #dcedfa);
+    border-top-color: #1976d2;
+    box-shadow: 0 3px 10px rgba(25, 118, 210, 0.1);
+}
+.blue-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(25, 118, 210, 0.2); }
+.blue-theme .phaseLabel { background: linear-gradient(135deg, #1976d2, #4aa3e0); }
+
+.purple-theme .phaseBlock {
+    background: linear-gradient(135deg, #f9edfa, #f0dcf4);
+    border-top-color: #9c27b0;
+    box-shadow: 0 3px 10px rgba(156, 39, 176, 0.1);
+}
+.purple-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(156, 39, 176, 0.2); }
+.purple-theme .phaseLabel { background: linear-gradient(135deg, #9c27b0, #c158ce); }
+/* --- End phase partition styles --- */
+
 .workDetailImg {
     width: 110px;
     border-radius: 4px;
