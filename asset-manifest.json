@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.96d677c7.css",
-    "main.js": "/static/js/main.8dbaf2cd.js",
+    "main.css": "/static/css/main.36f38114.css",
+    "main.js": "/static/js/main.60357e34.js",
     "static/media/detonator8.png": "/static/media/detonator8.4a3fa5566286921686fd.png",
     "static/media/detonator6.png": "/static/media/detonator6.80bf2de2c104de750249.png",
     "static/media/detonator4.png": "/static/media/detonator4.4673f09dc593fce9b834.png",
@@ -28,11 +28,11 @@
     "static/media/real_estate.png": "/static/media/real_estate.7249bf8ec5ac5eecde90.png",
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
-    "main.96d677c7.css.map": "/static/css/main.96d677c7.css.map",
-    "main.8dbaf2cd.js.map": "/static/js/main.8dbaf2cd.js.map"
+    "main.36f38114.css.map": "/static/css/main.36f38114.css.map",
+    "main.60357e34.js.map": "/static/js/main.60357e34.js.map"
   },
   "entrypoints": [
-    "static/css/main.96d677c7.css",
-    "static/js/main.8dbaf2cd.js"
+    "static/css/main.36f38114.css",
+    "static/js/main.60357e34.js"
   ]
 }
