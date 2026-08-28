@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.36f38114.css",
-    "main.js": "/static/js/main.60357e34.js",
+    "main.css": "/static/css/main.0788161f.css",
+    "main.js": "/static/js/main.d7016942.js",
     "static/media/detonator8.png": "/static/media/detonator8.4a3fa5566286921686fd.png",
     "static/media/detonator6.png": "/static/media/detonator6.80bf2de2c104de750249.png",
     "static/media/detonator4.png": "/static/media/detonator4.4673f09dc593fce9b834.png",
@@ -17,22 +17,14 @@
     "static/media/detonator7.png": "/static/media/detonator7.fd116dcbfb67caffa41e.png",
     "static/media/detonator1.png": "/static/media/detonator1.949ac16d6f410dc7bf13.png",
     "static/media/project2.png": "/static/media/project2.bf01685c084f79376309.png",
-    "static/media/portfolio-1.png": "/static/media/portfolio-1.b33adf772d54ab33e953.png",
-    "static/media/linkedin-icon.png": "/static/media/linkedin-icon.c18ad4b60f6ee7a5aebb.png",
     "static/media/jyothi.png": "/static/media/jyothi.6b9cfc7391fcf7ab238d.png",
-    "static/media/project_works.png": "/static/media/project_works.f914ce17a18ab1e08279.png",
-    "static/media/ai.png": "/static/media/ai.166931e83703c37851cf.png",
-    "static/media/entrepreneur.png": "/static/media/entrepreneur.d0162a254b797b0e26f1.png",
     "static/media/isn.png": "/static/media/isn.07730f64ef2ec88d0c91.png",
-    "static/media/experience.png": "/static/media/experience.734a894fa067ce748f6b.png",
-    "static/media/real_estate.png": "/static/media/real_estate.7249bf8ec5ac5eecde90.png",
-    "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
-    "main.36f38114.css.map": "/static/css/main.36f38114.css.map",
-    "main.60357e34.js.map": "/static/js/main.60357e34.js.map"
+    "main.0788161f.css.map": "/static/css/main.0788161f.css.map",
+    "main.d7016942.js.map": "/static/js/main.d7016942.js.map"
   },
   "entrypoints": [
-    "static/css/main.36f38114.css",
-    "static/js/main.60357e34.js"
+    "static/css/main.0788161f.css",
+    "static/js/main.d7016942.js"
   ]
 }
