@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import './works.css';
 
 // Asset Imports
-import Portfolio1 from "../../assets/portfolio-1.png";
 import Jyothi from "../../assets/jyothi.png";
 import isn from "../../assets/isn.png";
-import Portfolio2 from "../../assets/experience.png";
-import Portfolio3 from "../../assets/project_works.png";
 import tial1 from "../../assets/tial1.png";
 import project2 from "../../assets/project2.png";
 import agec from "../../assets/agec.png";
@@ -29,7 +26,6 @@ import detonator8 from "../../assets/detonator8.png";
 const portfolioItems = [
   {
     id: 1,
-    img: Portfolio1,
     title: "Education",
     description: "My academic background and qualifications.",
     themeClass: "royal-purple-theme",
@@ -56,7 +52,6 @@ const portfolioItems = [
   },
   {
     id: 2,
-    img: Portfolio2,
     title: "Experience",
     description: "A summary of my professional work history and roles.",
     themeClass: "blue-theme",
@@ -97,7 +92,7 @@ const portfolioItems = [
         phases: [
           {
             id: '2d-1',
-            phaseLabel: "Phase 1 - Haramil Breakwater Project",
+            phaseLabel: "Phase 1 - Haramil Project",
             detailImgs: [detonator1, detonator2, detonator3, detonator4, detonator5, detonator6, detonator7, detonator8],
             info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Gained practical exposure to marine and coastal infrastructure construction, observing the execution of shoreline protection and marine structures from site preparation through placement and construction. The experience involved understanding construction methodologies, drawings, site levels and profiles, as well as quality-control and consultant inspection processes in a marine environment.</p><p><strong>Key Exposure</strong></p><ul><li>Understanding construction sequences and site preparation</li><li>Interpretation of marine construction drawings, levels, chainages and profiles</li><li>Boat ramp construction and associated marine works</li><li>Crown wall construction and coastal structural works</li><li>Core-Loc® placement and installation procedures</li><li>Rock and armour protection works</li><li>Monitoring execution against approved drawings and specifications</li><li>Quality-control practices in marine construction</li><li>Consultant inspections and implementation of site observations</li><li>HSE practices and coordination within an active construction site</li></ul><p><em>Focus: <span class=\"highlight-gold\">Marine Construction</span>, <span class=\"highlight-gold\">Coastal Infrastructure</span>, <span class=\"highlight-gold\">Shore Protection</span>, <span class=\"highlight-gold\">Crown Walls</span>, <span class=\"highlight-gold\">Core-Loc® Placement</span>, <span class=\"highlight-gold\">Rock and Armour Works</span>, <span class=\"highlight-gold\">Site Supervision</span></em></p>"
           },
@@ -105,7 +100,7 @@ const portfolioItems = [
             id: '2d-2',
             phaseLabel: "Phase 2 - Fins Coastal Protection Project",
             //detailImgs: [fins1, fins2, fins3],
-            info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Unlike the Haramil Project, which was nearing its final stages, the Fins Main Breakwater (MBW) and the Lee Breakwater (LBW) was encountered at an early stage of construction — offering a valuable contrast in perspective, from the foundational setup of a marine project through to its initial execution on site. Gained hands-on exposure to Core-Loc® casting and curing at the casting yard, studied the concrete mix design in detail, and reviewed the project specifications and the contractor's scope of work. Also observed rock armour gradation, stockpile management, and the placement of rock armour at different levels and chainages along the breakwater.</p><p><strong>Key Exposure</strong></p><ul><li>Witnessed Core-Loc® casting and curing processes at the casting yard</li><li>Analyzed concrete mix design in detail</li><li>Reviewed project specifications and the contractor's scope of work</li><li>Understood rock armour gradation requirements</li><li>Observed stockpile management and material handling</li><li>Rock armour placement across different levels and chainages</li><li>Exposure to site equipment used in marine construction</li><li>Interpretation of breakwater engineering drawings and layouts</li><li>Consultant inspections and site observation follow-up</li></ul><p><em>Focus: <span class=\"highlight-gold\">Early-Stage Marine Construction</span>, <span class=\"highlight-gold\">Core-Loc® Casting</span>, <span class=\"highlight-gold\">Concrete Mix Design</span>, <span class=\"highlight-gold\">Rock Armour Gradation</span>, <span class=\"highlight-gold\">Casting Yard Operations</span>, <span class=\"highlight-gold\">Breakwater Construction</span></em></p>"
+            info: "<p><strong>Marine and Coastal Construction | Oman</strong></p><p>Unlike the Haramil Project, which was nearing its final stages, the Fins Main Breakwater (MBW) was encountered at an early stage of construction — offering a valuable contrast in perspective, from the foundational setup of a marine project through to its initial execution on site. Gained hands-on exposure to Core-Loc® casting and curing at the casting yard, studied the concrete mix design in detail, and reviewed the project specifications and the contractor's scope of work. Also observed rock armour gradation, stockpile management, and the placement of rock armour at different levels and chainages along the breakwater.</p><p><strong>Key Exposure</strong></p><ul><li>Witnessed Core-Loc® casting and curing processes at the casting yard</li><li>Studied concrete mix design in detail</li><li>Reviewed project specifications and the contractor's scope of work</li><li>Understood rock armour gradation requirements</li><li>Observed stockpile management and material handling</li><li>Rock armour placement across different levels and chainages</li><li>Exposure to site equipment used in marine construction</li><li>Interpretation of breakwater engineering drawings and layouts</li><li>Consultant inspections and site observation follow-up</li></ul><p><em>Focus: <span class=\"highlight-gold\">Early-Stage Marine Construction</span>, <span class=\"highlight-gold\">Core-Loc® Casting</span>, <span class=\"highlight-gold\">Concrete Mix Design</span>, <span class=\"highlight-gold\">Rock Armour Gradation</span>, <span class=\"highlight-gold\">Casting Yard Operations</span>, <span class=\"highlight-gold\">Breakwater Construction</span></em></p>"
           }
         ]
       }
@@ -113,7 +108,6 @@ const portfolioItems = [
   },
   {
     id: 3,
-    img: Portfolio3,
     title: "Projects",
     description: "A selection of key projects I have completed.",
     themeClass: "purple-theme",
@@ -158,7 +152,23 @@ const Works = () => {
           <div key={item.id} className={`workBar ${item.themeClass}`}>
 
             <div className="workBarTextGroup">
-              <img src={item.img} alt={item.title} className="workBarImg" />
+              {item.title === "Education" && (
+                <svg viewBox="0 0 24 24" className="workBarImg workBarIcon" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3L1 9l11 6 9-4.91V17"/>
+                  <path d="M5 10.5V16c0 1 3 3 7 3s7-2 7-3v-5.5"/>
+                </svg>
+              )}
+              {item.title === "Experience" && (
+                <svg viewBox="0 0 24 24" className="workBarImg workBarIcon" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              )}
+              {item.title === "Projects" && (
+                <svg viewBox="0 0 24 24" className="workBarImg workBarIcon" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+              )}
               <div className="workBarText">
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>

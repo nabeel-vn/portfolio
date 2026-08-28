@@ -65,6 +65,40 @@
     object-fit: contain;
 }
 
+.workBarIcon {
+    padding: 0.5rem;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
+    transition: filter 0.35s ease, transform 0.3s ease;
+}
+
+.workBar:hover .workBarIcon {
+    transform: scale(1.06);
+}
+
+.royal-purple-theme .workBarIcon {
+    color: #8e44ad;
+    filter: drop-shadow(0 1px 3px rgba(142, 68, 173, 0.15));
+}
+.royal-purple-theme:hover .workBarIcon {
+    filter: drop-shadow(0 2px 8px rgba(142, 68, 173, 0.35));
+}
+
+.blue-theme .workBarIcon {
+    color: #1976d2;
+    filter: drop-shadow(0 1px 3px rgba(25, 118, 210, 0.15));
+}
+.blue-theme:hover .workBarIcon {
+    filter: drop-shadow(0 2px 8px rgba(25, 118, 210, 0.35));
+}
+
+.purple-theme .workBarIcon {
+    color: #9c27b0;
+    filter: drop-shadow(0 1px 3px rgba(156, 39, 176, 0.15));
+}
+.purple-theme:hover .workBarIcon {
+    filter: drop-shadow(0 2px 8px rgba(156, 39, 176, 0.35));
+}
+
 .workDetails {
     margin-top: 1rem;
     padding-top: 1rem;
@@ -133,16 +167,20 @@
     margin: 0.2rem 0;
 }
 
-/* --- Partition between phases (e.g. Phase 1 / Phase 2) within a single entry --- */
+/* --- Premium, minimal glass-style partition between phases --- */
 .phaseBlock {
     position: relative;
-    background: #f7f7f9;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 14px;
     padding: 1.3rem 1.4rem 1.2rem 1.4rem;
     margin-top: 1.5rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    border-top: 3px solid rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.35s ease, transform 0.3s ease, border-color 0.35s ease;
 }
 
 .phaseBlock:first-of-type {
@@ -150,47 +188,49 @@
 }
 
 .phaseBlock:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.1),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 .phaseLabel {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.85rem;
+    display: inline-block;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: #fff;
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 0.9rem 0;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 0.35rem 0.9rem;
-    border-radius: 20px;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    transition: color 0.35s ease;
 }
 
-/* Themed accent — tinted phase background + top border + label pill, matching each section */
-.royal-purple-theme .phaseBlock {
-    background: linear-gradient(135deg, #f6effa, #ede0f5);
-    border-top-color: #8e44ad;
-    box-shadow: 0 3px 10px rgba(142, 68, 173, 0.1);
+/* Themed accent colors — subtle glow on hover, matching each section */
+.royal-purple-theme .phaseLabel { color: #8e44ad; }
+.royal-purple-theme .phaseBlock:hover {
+    border-color: rgba(142, 68, 173, 0.35);
+    box-shadow:
+        0 8px 22px rgba(142, 68, 173, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
-.royal-purple-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(142, 68, 173, 0.2); }
-.royal-purple-theme .phaseLabel { background: linear-gradient(135deg, #8e44ad, #b06fc7); }
 
-.blue-theme .phaseBlock {
-    background: linear-gradient(135deg, #eef7fd, #dcedfa);
-    border-top-color: #1976d2;
-    box-shadow: 0 3px 10px rgba(25, 118, 210, 0.1);
+.blue-theme .phaseLabel { color: #1976d2; }
+.blue-theme .phaseBlock:hover {
+    border-color: rgba(25, 118, 210, 0.35);
+    box-shadow:
+        0 8px 22px rgba(25, 118, 210, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
-.blue-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(25, 118, 210, 0.2); }
-.blue-theme .phaseLabel { background: linear-gradient(135deg, #1976d2, #4aa3e0); }
 
-.purple-theme .phaseBlock {
-    background: linear-gradient(135deg, #f9edfa, #f0dcf4);
-    border-top-color: #9c27b0;
-    box-shadow: 0 3px 10px rgba(156, 39, 176, 0.1);
+.purple-theme .phaseLabel { color: #9c27b0; }
+.purple-theme .phaseBlock:hover {
+    border-color: rgba(156, 39, 176, 0.35);
+    box-shadow:
+        0 8px 22px rgba(156, 39, 176, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
-.purple-theme .phaseBlock:hover { box-shadow: 0 6px 16px rgba(156, 39, 176, 0.2); }
-.purple-theme .phaseLabel { background: linear-gradient(135deg, #9c27b0, #c158ce); }
 /* --- End phase partition styles --- */
 
 .workDetailImg {
