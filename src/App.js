@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/Navbar.js';
 import Intro from './components/Intro/Intro.js';
 import Skills from './components/Skills/Skills.js';
 import Works from './components/Works/Works.js';
+import Articles from './components/Articles/Articles.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
 
@@ -17,6 +18,7 @@ function App() {
       <Intro />
       <Skills />
       <Works />
+      <Articles />
       <Contact />
       <Footer />
     </div>
@@ -24,4 +26,3 @@ function App() {
 }
 
 export default App;
-
