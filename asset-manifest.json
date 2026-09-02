@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.0788161f.css",
-    "main.js": "/static/js/main.d7016942.js",
+    "main.css": "/static/css/main.02c85484.css",
+    "main.js": "/static/js/main.96574d37.js",
     "static/media/detonator8.png": "/static/media/detonator8.4a3fa5566286921686fd.png",
+    "static/media/core-loc-article.pdf": "/static/media/core-loc-article.9e579cb946995cde4587.pdf",
     "static/media/detonator6.png": "/static/media/detonator6.80bf2de2c104de750249.png",
     "static/media/detonator4.png": "/static/media/detonator4.4673f09dc593fce9b834.png",
     "static/media/detonator5.png": "/static/media/detonator5.95499e4e24747065e757.png",
@@ -20,11 +21,11 @@
     "static/media/jyothi.png": "/static/media/jyothi.6b9cfc7391fcf7ab238d.png",
     "static/media/isn.png": "/static/media/isn.07730f64ef2ec88d0c91.png",
     "index.html": "/index.html",
-    "main.0788161f.css.map": "/static/css/main.0788161f.css.map",
-    "main.d7016942.js.map": "/static/js/main.d7016942.js.map"
+    "main.02c85484.css.map": "/static/css/main.02c85484.css.map",
+    "main.96574d37.js.map": "/static/js/main.96574d37.js.map"
   },
   "entrypoints": [
-    "static/css/main.0788161f.css",
-    "static/js/main.d7016942.js"
+    "static/css/main.02c85484.css",
+    "static/js/main.96574d37.js"
   ]
 }
