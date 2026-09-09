@@ -88,7 +88,7 @@ const portfolioItems = [
         Organization: "Detonator Engineering Company LLC",
         location: "Muscat Governorate, Sultanate of Oman",
         role: "Marine Engineering Intern",
-        duration: "01-08-2026 - Present",
+        duration: "01-08-2026 - 30-08-2026",
         phases: [
           {
             id: '2d-1',
