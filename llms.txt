@@ -1,0 +1,10 @@
+# Nabeel Vellakutty Naushad
+
+> Civil engineering graduate (B.Tech, APJ Abdul Kalam Technological University) with hands-on experience in airport infrastructure and marine and coastal construction. Based in the Sultanate of Oman. Interested in real estate development and infrastructure.
+
+## Portfolio
+- [Portfolio home](https://nabeelvn.in/): education, internships, projects, journeys, contact
+
+## Articles
+- [CORE-LOC in Modern Coastal Protection: From Design Theory to Site Execution](https://nabeelvn.in/articles/core-loc-coastal-protection.html): technical article on CORE-LOC armor units, breakwater construction and QA/QC, based on a marine engineering internship
+- [Same article as PDF](https://nabeelvn.in/articles/core-loc-coastal-protection.pdf)
