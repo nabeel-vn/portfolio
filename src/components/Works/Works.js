@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './works.css';
 
 // Asset Imports
@@ -86,6 +86,7 @@ const portfolioItems = [
       {
         id: '2d',
         Organization: "Detonator Engineering Company LLC",
+        client: "Ministry of Agriculture, Fisheries Wealth and Water Resources",
         location: "Muscat Governorate, Sultanate of Oman",
         role: "Marine Engineering Intern",
         duration: "01-08-2026 - 30-08-2026",
@@ -135,12 +136,45 @@ const portfolioItems = [
 const Works = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [openGalleries, setOpenGalleries] = useState({});
+  const [expandedInfo, setExpandedInfo] = useState({});
+  const [needsExpand, setNeedsExpand] = useState({});
+  const infoRefs = useRef({});
 
   const openLightbox = (imgSrc) => setSelectedImage(imgSrc);
   const closeLightbox = () => setSelectedImage(null);
   const toggleGallery = (key) => {
     setOpenGalleries(prev => ({ ...prev, [key]: !prev[key] }));
   };
+  const toggleInfo = (key) => {
+    setExpandedInfo(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  useEffect(() => {
+    const updates = {};
+    Object.keys(infoRefs.current).forEach(key => {
+      const el = infoRefs.current[key];
+      if (el) {
+        updates[key] = el.scrollHeight > el.clientHeight + 2;
+      }
+    });
+    setNeedsExpand(updates);
+  }, []);
+
+  const renderInfo = (key, html) => (
+    <>
+      <div
+        className={`infoCollapse ${expandedInfo[key] ? 'infoExpanded' : ''}`}
+        ref={(el) => { if (el) infoRefs.current[key] = el; }}
+      >
+        <p className="detailInfo" dangerouslySetInnerHTML={{ __html: html }}></p>
+      </div>
+      {needsExpand[key] && (
+        <span className="readMoreToggle" onClick={() => toggleInfo(key)}>
+          {expandedInfo[key] ? 'Show less' : 'Read more'}
+        </span>
+      )}
+    </>
+  );
 
   return (
     <section id="works">
@@ -181,13 +215,12 @@ const Works = () => {
                   <div className="detailContentContainer">
                     <div className="workDetailText">
                       {(detail.Institution || detail.Organization) && <h3>{detail.Institution || detail.Organization}</h3>}
+                      {detail.client && <p className="detailClient">Client: {detail.client}</p>}
                       {detail.location && <p className="detailLocation">{detail.location}</p>}
                       {detail.role && <p className="detailRole">{detail.role}</p>}
                       {detail.duration && <p className="detailDuration">{detail.duration}</p>}
 
-                      {!detail.phases && detail.info && (
-                        <p className="detailInfo" dangerouslySetInnerHTML={{ __html: detail.info }}></p>
-                      )}
+                      {!detail.phases && detail.info && renderInfo(detail.id, detail.info)}
 
                       {!detail.phases && detail.detailImgs && (
                         <div className="galleryContainer">
@@ -207,9 +240,7 @@ const Works = () => {
                       {detail.phases && detail.phases.map(phase => (
                         <div key={phase.id} className="phaseBlock">
                           <h4 className="phaseLabel">{phase.phaseLabel}</h4>
-                          {phase.info && (
-                            <p className="detailInfo" dangerouslySetInnerHTML={{ __html: phase.info }}></p>
-                          )}
+                          {phase.info && renderInfo(phase.id, phase.info)}
                           {phase.detailImgs && phase.detailImgs.length > 0 && (
                             <div className="galleryContainer">
                               <span className="clickHereText" onClick={() => toggleGallery(phase.id)}>

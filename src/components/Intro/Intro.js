@@ -67,7 +67,7 @@ const Intro = () => {
                         </div>
                         <div className="titleBlockRow">
                             <span className="tbLabel">Based</span>
-                            <span className="tbValue">Sultanate of Oman</span>
+                            <span className="tbValue">India, Sultanate of Oman</span>
                         </div>
                     </div>
                 </div>
